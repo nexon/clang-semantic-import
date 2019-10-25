@@ -1,0 +1,4 @@
+.DS_Store
+bw-output/
+.scannerwork/
+clang-semantic-import
