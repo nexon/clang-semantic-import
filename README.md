@@ -12,11 +12,19 @@ The primary function of CSI is **sort the imports**, but we have more option to 
 2. ```-order```: Order imports alfabetically (alias ```-o```)
 3. ```-rewrite```: Save all the actions performed in the Source Code (alias ```-r```)
 
-##How to compile
+## How to compile
 
-``` docker build -t clang . ``` 
+To build this tool, i download the specific llvm version from llvm.org. If you want to contribute please go to the **contribute** section.
 
-``` docker run -it -v $PWD:/home clang ```
+To compile the tool i made a little Dockerfile that download clang 7 and make everthing ready to compile. The step to deploy the docker container is:
+
+
+1. ``` docker build -t clang . ``` 
+
+2. ``` docker run -it -v $PWD:/home clang ```
+
+After you are in the container, you are ready to build the tool:
+
 
 ``` make ```
 
